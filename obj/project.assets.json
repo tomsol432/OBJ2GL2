@@ -1,0 +1,930 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7.1": {
+      "AssimpNet/4.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AssimpNet.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AssimpNet.dll": {}
+        },
+        "build": {
+          "build/AssimpNet.targets": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libassimp.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx-x64/native/libassimp.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/win-x64/native/assimp.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/assimp.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "Cyotek.Drawing.BitmapFont/1.3.4": {
+        "type": "package",
+        "compile": {
+          "lib/net47/Cyotek.Drawing.BitmapFont.dll": {}
+        },
+        "runtime": {
+          "lib/net47/Cyotek.Drawing.BitmapFont.dll": {}
+        }
+      },
+      "HelixToolkit/2.5.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.1/HelixToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/HelixToolkit.dll": {}
+        }
+      },
+      "HelixToolkit.Wpf.SharpDX/2.5.1": {
+        "type": "package",
+        "dependencies": {
+          "Cyotek.Drawing.BitmapFont": "1.3.4",
+          "HelixToolkit": "[2.5.1]",
+          "SharpDX": "4.2.0",
+          "SharpDX.D3DCompiler": "4.2.0",
+          "SharpDX.DXGI": "4.2.0",
+          "SharpDX.Direct2D1": "4.2.0",
+          "SharpDX.Direct3D11": "4.2.0",
+          "SharpDX.Direct3D9": "4.2.0",
+          "SharpDX.Mathematics": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/HelixToolkit.Wpf.SharpDX.dll": {}
+        },
+        "runtime": {
+          "lib/net45/HelixToolkit.Wpf.SharpDX.dll": {}
+        }
+      },
+      "JeremyAnsel.Media.WavefrontObj/1.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net40/JeremyAnsel.Media.WavefrontObj.dll": {}
+        },
+        "runtime": {
+          "lib/net40/JeremyAnsel.Media.WavefrontObj.dll": {}
+        }
+      },
+      "SharpDX/4.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/SharpDX.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.dll": {}
+        }
+      },
+      "SharpDX.D3DCompiler/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.D3DCompiler.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.D3DCompiler.dll": {}
+        }
+      },
+      "SharpDX.Direct2D1/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0",
+          "SharpDX.DXGI": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.Direct2D1.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.Direct2D1.dll": {}
+        }
+      },
+      "SharpDX.Direct3D11/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0",
+          "SharpDX.DXGI": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.Direct3D11.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.Direct3D11.dll": {}
+        }
+      },
+      "SharpDX.Direct3D9/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.Direct3D9.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.Direct3D9.dll": {}
+        }
+      },
+      "SharpDX.DXGI/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.DXGI.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.DXGI.dll": {}
+        }
+      },
+      "SharpDX.Mathematics/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.Mathematics.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.Mathematics.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.1/win": {
+      "AssimpNet/4.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AssimpNet.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AssimpNet.dll": {}
+        },
+        "build": {
+          "build/AssimpNet.targets": {}
+        }
+      },
+      "Cyotek.Drawing.BitmapFont/1.3.4": {
+        "type": "package",
+        "compile": {
+          "lib/net47/Cyotek.Drawing.BitmapFont.dll": {}
+        },
+        "runtime": {
+          "lib/net47/Cyotek.Drawing.BitmapFont.dll": {}
+        }
+      },
+      "HelixToolkit/2.5.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.1/HelixToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/HelixToolkit.dll": {}
+        }
+      },
+      "HelixToolkit.Wpf.SharpDX/2.5.1": {
+        "type": "package",
+        "dependencies": {
+          "Cyotek.Drawing.BitmapFont": "1.3.4",
+          "HelixToolkit": "[2.5.1]",
+          "SharpDX": "4.2.0",
+          "SharpDX.D3DCompiler": "4.2.0",
+          "SharpDX.DXGI": "4.2.0",
+          "SharpDX.Direct2D1": "4.2.0",
+          "SharpDX.Direct3D11": "4.2.0",
+          "SharpDX.Direct3D9": "4.2.0",
+          "SharpDX.Mathematics": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/HelixToolkit.Wpf.SharpDX.dll": {}
+        },
+        "runtime": {
+          "lib/net45/HelixToolkit.Wpf.SharpDX.dll": {}
+        }
+      },
+      "JeremyAnsel.Media.WavefrontObj/1.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net40/JeremyAnsel.Media.WavefrontObj.dll": {}
+        },
+        "runtime": {
+          "lib/net40/JeremyAnsel.Media.WavefrontObj.dll": {}
+        }
+      },
+      "SharpDX/4.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/SharpDX.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.dll": {}
+        }
+      },
+      "SharpDX.D3DCompiler/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.D3DCompiler.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.D3DCompiler.dll": {}
+        }
+      },
+      "SharpDX.Direct2D1/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0",
+          "SharpDX.DXGI": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.Direct2D1.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.Direct2D1.dll": {}
+        }
+      },
+      "SharpDX.Direct3D11/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0",
+          "SharpDX.DXGI": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.Direct3D11.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.Direct3D11.dll": {}
+        }
+      },
+      "SharpDX.Direct3D9/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.Direct3D9.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.Direct3D9.dll": {}
+        }
+      },
+      "SharpDX.DXGI/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.DXGI.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.DXGI.dll": {}
+        }
+      },
+      "SharpDX.Mathematics/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.Mathematics.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.Mathematics.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.1/win-x64": {
+      "AssimpNet/4.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AssimpNet.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AssimpNet.dll": {}
+        },
+        "native": {
+          "runtimes/win-x64/native/assimp.dll": {}
+        },
+        "build": {
+          "build/AssimpNet.targets": {}
+        }
+      },
+      "Cyotek.Drawing.BitmapFont/1.3.4": {
+        "type": "package",
+        "compile": {
+          "lib/net47/Cyotek.Drawing.BitmapFont.dll": {}
+        },
+        "runtime": {
+          "lib/net47/Cyotek.Drawing.BitmapFont.dll": {}
+        }
+      },
+      "HelixToolkit/2.5.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.1/HelixToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/HelixToolkit.dll": {}
+        }
+      },
+      "HelixToolkit.Wpf.SharpDX/2.5.1": {
+        "type": "package",
+        "dependencies": {
+          "Cyotek.Drawing.BitmapFont": "1.3.4",
+          "HelixToolkit": "[2.5.1]",
+          "SharpDX": "4.2.0",
+          "SharpDX.D3DCompiler": "4.2.0",
+          "SharpDX.DXGI": "4.2.0",
+          "SharpDX.Direct2D1": "4.2.0",
+          "SharpDX.Direct3D11": "4.2.0",
+          "SharpDX.Direct3D9": "4.2.0",
+          "SharpDX.Mathematics": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/HelixToolkit.Wpf.SharpDX.dll": {}
+        },
+        "runtime": {
+          "lib/net45/HelixToolkit.Wpf.SharpDX.dll": {}
+        }
+      },
+      "JeremyAnsel.Media.WavefrontObj/1.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net40/JeremyAnsel.Media.WavefrontObj.dll": {}
+        },
+        "runtime": {
+          "lib/net40/JeremyAnsel.Media.WavefrontObj.dll": {}
+        }
+      },
+      "SharpDX/4.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/SharpDX.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.dll": {}
+        }
+      },
+      "SharpDX.D3DCompiler/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.D3DCompiler.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.D3DCompiler.dll": {}
+        }
+      },
+      "SharpDX.Direct2D1/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0",
+          "SharpDX.DXGI": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.Direct2D1.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.Direct2D1.dll": {}
+        }
+      },
+      "SharpDX.Direct3D11/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0",
+          "SharpDX.DXGI": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.Direct3D11.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.Direct3D11.dll": {}
+        }
+      },
+      "SharpDX.Direct3D9/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.Direct3D9.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.Direct3D9.dll": {}
+        }
+      },
+      "SharpDX.DXGI/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.DXGI.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.DXGI.dll": {}
+        }
+      },
+      "SharpDX.Mathematics/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.Mathematics.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.Mathematics.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.1/win-x86": {
+      "AssimpNet/4.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AssimpNet.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AssimpNet.dll": {}
+        },
+        "native": {
+          "runtimes/win-x86/native/assimp.dll": {}
+        },
+        "build": {
+          "build/AssimpNet.targets": {}
+        }
+      },
+      "Cyotek.Drawing.BitmapFont/1.3.4": {
+        "type": "package",
+        "compile": {
+          "lib/net47/Cyotek.Drawing.BitmapFont.dll": {}
+        },
+        "runtime": {
+          "lib/net47/Cyotek.Drawing.BitmapFont.dll": {}
+        }
+      },
+      "HelixToolkit/2.5.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.1/HelixToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/HelixToolkit.dll": {}
+        }
+      },
+      "HelixToolkit.Wpf.SharpDX/2.5.1": {
+        "type": "package",
+        "dependencies": {
+          "Cyotek.Drawing.BitmapFont": "1.3.4",
+          "HelixToolkit": "[2.5.1]",
+          "SharpDX": "4.2.0",
+          "SharpDX.D3DCompiler": "4.2.0",
+          "SharpDX.DXGI": "4.2.0",
+          "SharpDX.Direct2D1": "4.2.0",
+          "SharpDX.Direct3D11": "4.2.0",
+          "SharpDX.Direct3D9": "4.2.0",
+          "SharpDX.Mathematics": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/HelixToolkit.Wpf.SharpDX.dll": {}
+        },
+        "runtime": {
+          "lib/net45/HelixToolkit.Wpf.SharpDX.dll": {}
+        }
+      },
+      "JeremyAnsel.Media.WavefrontObj/1.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net40/JeremyAnsel.Media.WavefrontObj.dll": {}
+        },
+        "runtime": {
+          "lib/net40/JeremyAnsel.Media.WavefrontObj.dll": {}
+        }
+      },
+      "SharpDX/4.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/SharpDX.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.dll": {}
+        }
+      },
+      "SharpDX.D3DCompiler/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.D3DCompiler.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.D3DCompiler.dll": {}
+        }
+      },
+      "SharpDX.Direct2D1/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0",
+          "SharpDX.DXGI": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.Direct2D1.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.Direct2D1.dll": {}
+        }
+      },
+      "SharpDX.Direct3D11/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0",
+          "SharpDX.DXGI": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.Direct3D11.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.Direct3D11.dll": {}
+        }
+      },
+      "SharpDX.Direct3D9/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.Direct3D9.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.Direct3D9.dll": {}
+        }
+      },
+      "SharpDX.DXGI/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.DXGI.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.DXGI.dll": {}
+        }
+      },
+      "SharpDX.Mathematics/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.Mathematics.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.Mathematics.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AssimpNet/4.1.0": {
+      "sha512": "sqBTw319GrKP93+FD4p/TkH9v7Bez7b1xVhON+RDNtZXQ/teO5FA+yeXTFyzQ2G19gw3NVgY3zq15QI7RlXUdg==",
+      "type": "package",
+      "path": "assimpnet/4.1.0",
+      "files": [
+        ".signature.p7s",
+        "AssimpNet Documentation (October 2018).chm",
+        "ChangeLog.txt",
+        "License.txt",
+        "assimpnet.4.1.0.nupkg.sha512",
+        "assimpnet.nuspec",
+        "build/AssimpNet.targets",
+        "lib/net35/AssimpNet.dll",
+        "lib/net35/AssimpNet.xml",
+        "lib/net40/AssimpNet.dll",
+        "lib/net40/AssimpNet.xml",
+        "lib/netstandard1.3/AssimpNet.dll",
+        "lib/netstandard1.3/AssimpNet.xml",
+        "runtimes/linux-x64/native/libassimp.so",
+        "runtimes/osx-x64/native/libassimp.dylib",
+        "runtimes/win-x64/native/assimp.dll",
+        "runtimes/win-x86/native/assimp.dll"
+      ]
+    },
+    "Cyotek.Drawing.BitmapFont/1.3.4": {
+      "sha512": "JnrPgniVoNAWZM1EYvPIkd/6i1XYqRgp7VB8Ogy72oY+TALeu5c2JVoRgSIbfbkibb8powli3UOduHPt8w12GA==",
+      "type": "package",
+      "path": "cyotek.drawing.bitmapfont/1.3.4",
+      "files": [
+        "cyotek.drawing.bitmapfont.1.3.4.nupkg.sha512",
+        "cyotek.drawing.bitmapfont.nuspec",
+        "lib/net20/Cyotek.Drawing.BitmapFont.dll",
+        "lib/net20/Cyotek.Drawing.BitmapFont.pdb",
+        "lib/net35/Cyotek.Drawing.BitmapFont.dll",
+        "lib/net35/Cyotek.Drawing.BitmapFont.pdb",
+        "lib/net40/Cyotek.Drawing.BitmapFont.dll",
+        "lib/net40/Cyotek.Drawing.BitmapFont.pdb",
+        "lib/net45/Cyotek.Drawing.BitmapFont.dll",
+        "lib/net45/Cyotek.Drawing.BitmapFont.pdb",
+        "lib/net46/Cyotek.Drawing.BitmapFont.dll",
+        "lib/net46/Cyotek.Drawing.BitmapFont.pdb",
+        "lib/net47/Cyotek.Drawing.BitmapFont.dll",
+        "lib/net47/Cyotek.Drawing.BitmapFont.pdb",
+        "lib/netstandard1.3/Cyotek.Drawing.BitmapFont.dll",
+        "lib/netstandard1.3/Cyotek.Drawing.BitmapFont.pdb"
+      ]
+    },
+    "HelixToolkit/2.5.1": {
+      "sha512": "0NOmKvTLaNxS/eSKqxf+03Sr0PJWBQqXWsSqHo0ejxfKc9JQ5okBin1UUWUz111nukBcDOK1JF+F+maSOaJgBQ==",
+      "type": "package",
+      "path": "helixtoolkit/2.5.1",
+      "files": [
+        ".signature.p7s",
+        "AUTHORS",
+        "CONTRIBUTORS",
+        "LICENSE",
+        "README.md",
+        "helixtoolkit.2.5.1.nupkg.sha512",
+        "helixtoolkit.nuspec",
+        "lib/netstandard1.1/HelixToolkit.dll",
+        "lib/netstandard1.1/HelixToolkit.pdb",
+        "lib/netstandard1.1/HelixToolkit.xml"
+      ]
+    },
+    "HelixToolkit.Wpf.SharpDX/2.5.1": {
+      "sha512": "MgjSp4jxs6HEbIiNWTvxrjpQZpm2JeIO1n7/vbzo/ZKhLG/hNKsgu5aKDoOTBO1Q2KJaNoN1PjROMJG53kVR8Q==",
+      "type": "package",
+      "path": "helixtoolkit.wpf.sharpdx/2.5.1",
+      "files": [
+        ".signature.p7s",
+        "AUTHORS",
+        "CONTRIBUTORS",
+        "LICENSE",
+        "README.md",
+        "helixtoolkit.wpf.sharpdx.2.5.1.nupkg.sha512",
+        "helixtoolkit.wpf.sharpdx.nuspec",
+        "lib/net45/HelixToolkit.Wpf.SharpDX.XML",
+        "lib/net45/HelixToolkit.Wpf.SharpDX.dll",
+        "lib/net45/HelixToolkit.Wpf.SharpDX.pdb"
+      ]
+    },
+    "JeremyAnsel.Media.WavefrontObj/1.0.2": {
+      "sha512": "Fbn+WcAbSNc3zai7wncJTdAhakhFnkHccvON0flUmQOBZrwOizKY3Pe/oNfwaD2kdaMIvdfMx8X8sKug7aTekQ==",
+      "type": "package",
+      "path": "jeremyansel.media.wavefrontobj/1.0.2",
+      "files": [
+        ".signature.p7s",
+        "jeremyansel.media.wavefrontobj.1.0.2.nupkg.sha512",
+        "jeremyansel.media.wavefrontobj.nuspec",
+        "lib/net40/JeremyAnsel.Media.WavefrontObj.dll",
+        "lib/net40/JeremyAnsel.Media.WavefrontObj.pdb",
+        "license.txt"
+      ]
+    },
+    "SharpDX/4.2.0": {
+      "sha512": "2bgw26YivTREO56xCyBkA2hQFKGFUBOFGF3iVwBifVl34rdlwBGCRtw7L47+BPD+Jb65QQ2zBAeSbKjAIrT/Bw==",
+      "type": "package",
+      "path": "sharpdx/4.2.0",
+      "files": [
+        ".signature.p7s",
+        "lib/net40/.xml",
+        "lib/net40/SharpDX.dll",
+        "lib/net40/SharpDX.pdb",
+        "lib/net45/.xml",
+        "lib/net45/SharpDX.dll",
+        "lib/net45/SharpDX.pdb",
+        "lib/netstandard1.1/.xml",
+        "lib/netstandard1.1/SharpDX.dll",
+        "lib/netstandard1.1/SharpDX.pdb",
+        "lib/uap10.0/.xml",
+        "lib/uap10.0/SharpDX.dll",
+        "lib/uap10.0/SharpDX.pdb",
+        "lib/uap10.0/SharpDX.pri",
+        "sharpdx.4.2.0.nupkg.sha512",
+        "sharpdx.nuspec"
+      ]
+    },
+    "SharpDX.D3DCompiler/4.2.0": {
+      "sha512": "/Vvc+FKnet3oiXvHjpqDFkYp+g5UjRGD3kNbcnH8NSrE3//xROBK9T3Nf4wv+P/YZ4SmmvwP0xqAaDQg+J9rHA==",
+      "type": "package",
+      "path": "sharpdx.d3dcompiler/4.2.0",
+      "files": [
+        ".signature.p7s",
+        "lib/net40/SharpDX.D3DCompiler.dll",
+        "lib/net40/SharpDX.D3DCompiler.pdb",
+        "lib/net40/SharpDX.D3DCompiler.xml",
+        "lib/net45/SharpDX.D3DCompiler.dll",
+        "lib/net45/SharpDX.D3DCompiler.pdb",
+        "lib/net45/SharpDX.D3DCompiler.xml",
+        "lib/netstandard1.1/SharpDX.D3DCompiler.dll",
+        "lib/netstandard1.1/SharpDX.D3DCompiler.pdb",
+        "lib/netstandard1.1/SharpDX.D3DCompiler.xml",
+        "lib/uap10.0/SharpDX.D3DCompiler.dll",
+        "lib/uap10.0/SharpDX.D3DCompiler.pdb",
+        "lib/uap10.0/SharpDX.D3DCompiler.pri",
+        "lib/uap10.0/SharpDX.D3DCompiler.xml",
+        "sharpdx.d3dcompiler.4.2.0.nupkg.sha512",
+        "sharpdx.d3dcompiler.nuspec"
+      ]
+    },
+    "SharpDX.Direct2D1/4.2.0": {
+      "sha512": "2tm4M3tPEMXyp8tDlCtF5i68hgdgRmG2TxGRVGyoZbU8V2s9vFmnkVI9yRVm1trny/KoOOpY+xuqLo3/XcCFgg==",
+      "type": "package",
+      "path": "sharpdx.direct2d1/4.2.0",
+      "files": [
+        ".signature.p7s",
+        "lib/net40/SharpDX.Direct2D1.dll",
+        "lib/net40/SharpDX.Direct2D1.pdb",
+        "lib/net40/SharpDX.Direct2D1.xml",
+        "lib/net45/SharpDX.Direct2D1.dll",
+        "lib/net45/SharpDX.Direct2D1.pdb",
+        "lib/net45/SharpDX.Direct2D1.xml",
+        "lib/netstandard1.1/SharpDX.Direct2D1.dll",
+        "lib/netstandard1.1/SharpDX.Direct2D1.pdb",
+        "lib/netstandard1.1/SharpDX.Direct2D1.xml",
+        "lib/uap10.0/SharpDX.Direct2D1.dll",
+        "lib/uap10.0/SharpDX.Direct2D1.pdb",
+        "lib/uap10.0/SharpDX.Direct2D1.pri",
+        "lib/uap10.0/SharpDX.Direct2D1.xml",
+        "sharpdx.direct2d1.4.2.0.nupkg.sha512",
+        "sharpdx.direct2d1.nuspec"
+      ]
+    },
+    "SharpDX.Direct3D11/4.2.0": {
+      "sha512": "VfkpMezGV2hFFSmqx3XtN0xT/5PSoLPA4Q6FOOQcX2IOWhLzdK3FQN/IIUR5BfmR8uqNimTRRMKq1NzLX3zUVw==",
+      "type": "package",
+      "path": "sharpdx.direct3d11/4.2.0",
+      "files": [
+        ".signature.p7s",
+        "lib/net40/SharpDX.Direct3D11.dll",
+        "lib/net40/SharpDX.Direct3D11.pdb",
+        "lib/net40/SharpDX.Direct3D11.xml",
+        "lib/net45/SharpDX.Direct3D11.dll",
+        "lib/net45/SharpDX.Direct3D11.pdb",
+        "lib/net45/SharpDX.Direct3D11.xml",
+        "lib/netstandard1.1/SharpDX.Direct3D11.dll",
+        "lib/netstandard1.1/SharpDX.Direct3D11.pdb",
+        "lib/netstandard1.1/SharpDX.Direct3D11.xml",
+        "lib/uap10.0/SharpDX.Direct3D11.dll",
+        "lib/uap10.0/SharpDX.Direct3D11.pdb",
+        "lib/uap10.0/SharpDX.Direct3D11.pri",
+        "lib/uap10.0/SharpDX.Direct3D11.xml",
+        "sharpdx.direct3d11.4.2.0.nupkg.sha512",
+        "sharpdx.direct3d11.nuspec"
+      ]
+    },
+    "SharpDX.Direct3D9/4.2.0": {
+      "sha512": "hDFFBhUN1SK3ueKNvxXCj/0jXCZFSp5sqUAqyoksrUZHUjnUHzC9v90ldLLlYQ1KhRyqbpALMjo5CUFiDfz5iw==",
+      "type": "package",
+      "path": "sharpdx.direct3d9/4.2.0",
+      "files": [
+        ".signature.p7s",
+        "lib/net40/SharpDX.Direct3D9.dll",
+        "lib/net40/SharpDX.Direct3D9.pdb",
+        "lib/net40/SharpDX.Direct3D9.xml",
+        "lib/net45/SharpDX.Direct3D9.dll",
+        "lib/net45/SharpDX.Direct3D9.pdb",
+        "lib/net45/SharpDX.Direct3D9.xml",
+        "lib/netstandard1.3/SharpDX.Direct3D9.dll",
+        "lib/netstandard1.3/SharpDX.Direct3D9.pdb",
+        "lib/netstandard1.3/SharpDX.Direct3D9.xml",
+        "sharpdx.direct3d9.4.2.0.nupkg.sha512",
+        "sharpdx.direct3d9.nuspec"
+      ]
+    },
+    "SharpDX.DXGI/4.2.0": {
+      "sha512": "GeDlClsVQUPom9fHv1d8JdwxzpXnuI6d2MNAIDYkg6cwRDFZQllybcYFWncibcoYGiRtL3tn6JQTMnTUZbYQAQ==",
+      "type": "package",
+      "path": "sharpdx.dxgi/4.2.0",
+      "files": [
+        ".signature.p7s",
+        "lib/net40/SharpDX.DXGI.dll",
+        "lib/net40/SharpDX.DXGI.pdb",
+        "lib/net40/SharpDX.DXGI.xml",
+        "lib/net45/SharpDX.DXGI.dll",
+        "lib/net45/SharpDX.DXGI.pdb",
+        "lib/net45/SharpDX.DXGI.xml",
+        "lib/netstandard1.1/SharpDX.DXGI.dll",
+        "lib/netstandard1.1/SharpDX.DXGI.pdb",
+        "lib/netstandard1.1/SharpDX.DXGI.xml",
+        "lib/uap10.0/SharpDX.DXGI.dll",
+        "lib/uap10.0/SharpDX.DXGI.pdb",
+        "lib/uap10.0/SharpDX.DXGI.pri",
+        "lib/uap10.0/SharpDX.DXGI.xml",
+        "sharpdx.dxgi.4.2.0.nupkg.sha512",
+        "sharpdx.dxgi.nuspec"
+      ]
+    },
+    "SharpDX.Mathematics/4.2.0": {
+      "sha512": "+eTiX5NFnO2+SRQQVVPxRm3KUCA307z2aAVGLs6vbcRmCXerTVhK9MIpMecZOUbCB32SWBl9QMGbigFWe9/xMA==",
+      "type": "package",
+      "path": "sharpdx.mathematics/4.2.0",
+      "files": [
+        ".signature.p7s",
+        "lib/net40/SharpDX.Mathematics.dll",
+        "lib/net40/SharpDX.Mathematics.pdb",
+        "lib/net40/SharpDX.Mathematics.xml",
+        "lib/net45/SharpDX.Mathematics.dll",
+        "lib/net45/SharpDX.Mathematics.pdb",
+        "lib/net45/SharpDX.Mathematics.xml",
+        "lib/netstandard1.1/SharpDX.Mathematics.dll",
+        "lib/netstandard1.1/SharpDX.Mathematics.pdb",
+        "lib/netstandard1.1/SharpDX.Mathematics.xml",
+        "lib/uap10.0/SharpDX.Mathematics.dll",
+        "lib/uap10.0/SharpDX.Mathematics.pdb",
+        "lib/uap10.0/SharpDX.Mathematics.pri",
+        "lib/uap10.0/SharpDX.Mathematics.xml",
+        "sharpdx.mathematics.4.2.0.nupkg.sha512",
+        "sharpdx.mathematics.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7.1": [
+      "AssimpNet >= 4.1.0",
+      "HelixToolkit >= 2.5.1",
+      "HelixToolkit.Wpf.SharpDX >= 2.5.1",
+      "JeremyAnsel.Media.WavefrontObj >= 1.0.2"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\tomso\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\tomso\\source\\repos\\OBJ2GL2\\OBJ2GL2\\OBJ2GL2.csproj",
+      "projectName": "OBJ2GL2",
+      "projectPath": "C:\\Users\\tomso\\source\\repos\\OBJ2GL2\\OBJ2GL2\\OBJ2GL2.csproj",
+      "packagesPath": "C:\\Users\\tomso\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tomso\\source\\repos\\OBJ2GL2\\OBJ2GL2\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "configFilePaths": [
+        "C:\\Users\\tomso\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net471"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net471": {
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "net471": {
+        "dependencies": {
+          "AssimpNet": {
+            "target": "Package",
+            "version": "[4.1.0, )"
+          },
+          "HelixToolkit": {
+            "target": "Package",
+            "version": "[2.5.1, )"
+          },
+          "HelixToolkit.Wpf.SharpDX": {
+            "target": "Package",
+            "version": "[2.5.1, )"
+          },
+          "JeremyAnsel.Media.WavefrontObj": {
+            "target": "Package",
+            "version": "[1.0.2, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}
