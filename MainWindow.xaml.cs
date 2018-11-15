@@ -26,9 +26,9 @@ namespace OBJ2GL2
         ObjFile ObjFile;
         float scale;
         
-        float pointx; //obj
-        float pointy; //obj
-        float pointz; //obj
+        float pointx; //objOld
+        float pointy; //objOld
+        float pointz; //objOld
 
         float pointx1CAD;
         float pointx2CAD;
